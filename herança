@@ -1,29 +1,30 @@
-public class Esporte {
-    private String nome;
-    private int numeroDeJogadores;
-    private String origem;
+public class Livro {
+    private String titulo;
+    private String autor;
+    private int numeroDePaginas;
 
     // Getters e Setters
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public int getNumeroDeJogadores() {
-        return numeroDeJogadores;
+    public String getAutor() {
+        return autor;
     }
 
-    public void setNumeroDeJogadores(int numeroDeJogadores) {
-        this.numeroDeJogadores = numeroDeJogadores;
+    public void setAutor(String autor) {
+        this.autor = autor;
     }
 
-    public String getOrigem() {
-        return origem;
+    public int getNumeroDePaginas() {
+        return numeroDePaginas;
     }
 
-    public void setOrigem(String origem) {
-        this.origem = origem;
+    public void setNumeroDePaginas(int numeroDePaginas) {
+        this.numeroDePaginas = numeroDePaginas;
     }
+}
