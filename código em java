@@ -1,0 +1,45 @@
+public class Main {
+    public static void main(String[] args) {
+       
+        Pessoa p1 = new Pessoa("Lucas", 40);
+        Estudante e1 = new Estudante("Ana", 20, "Engenharia");
+
+        
+        p1.apresentar();
+        e1.apresentar();
+        e1.estudar();
+    }
+}
+
+
+class Pessoa {
+    String nome;
+    int idade;
+
+  
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+  
+    public void apresentar() {
+        System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+    }
+}
+
+
+class Estudante extends Pessoa {
+    String curso;
+
+  
+    public Estudante(String nome, int idade, String curso) {
+        super(nome, idade); // chama o construtor da superclasse
+        this.curso = curso;
+    }
+
+   
+    public void estudar() {
+        System.out.println(nome + " está estudando " + curso + ".");
+    }
+}
